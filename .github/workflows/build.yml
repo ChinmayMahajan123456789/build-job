@@ -2,7 +2,7 @@ name: Compile the job at the scheduled time
 
 on:
   schedule:
-    - cron: "0/1 * * * *"
+    - cron: "* * * * *"
 env:
   DOTNET_VERSION: '6.0.x'
 
