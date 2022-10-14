@@ -1,6 +1,9 @@
 name: Compile the job at the scheduled time
 
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: "* * * * *"
 env:
