@@ -1,0 +1,29 @@
+name: Compile the job at the scheduled time
+
+on:
+  schedule:
+    - cron: "1 * * * *"
+env:
+  DOTNET_VERSION: '6.0.x'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: download dependency
+        run: dotnet restore
+
+      - name: build app
+        run: dotnet build -c Release --no-restore
+
+    
+
+
+  
+
+
+
+  
