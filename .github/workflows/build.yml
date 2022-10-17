@@ -26,7 +26,7 @@ jobs:
         run: dotnet build -c Release --no-restore
 
       - name: Send some mail
-        uses: build-job/send-email-action@master
+        uses: ChinmayMahajan123456789/build-job/send-email-action@master
         with:
           server_address: smtp.gmail.com
           port: 465
