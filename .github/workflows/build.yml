@@ -1,4 +1,4 @@
-name: Compile the job at the scheduled time
+name: Compile the job at the scheduled Time
 
 on:
   push:
