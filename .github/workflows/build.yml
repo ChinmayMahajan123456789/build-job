@@ -25,6 +25,18 @@ jobs:
       - name: build app
         run: dotnet build -c Release --no-restore
 
+      - name: Send some mail
+        uses: wadeww/send-email-action@master
+        with:
+          server_address: smtp.gmail.com
+          port: 465
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: Workflow finished
+          body: Job completed ${{job.status}}
+          to: chinmay.mahajan@amla.io
+          from: Me
+
  
     
 
