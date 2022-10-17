@@ -1,1 +1,1 @@
-[![Compile the job at the scheduled Time](https://github.com/ChinmayMahajan123456789/build-job/actions/workflows/build.yml/badge.svg)]
+[![Compile the job at the scheduled Time](https://github.com/ChinmayMahajan123456789/build-job/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/ChinmayMahajan123456789/build-job/actions/workflows/build.yml)
