@@ -25,6 +25,8 @@ jobs:
       - name: build app
         run: dotnet build -c Release --no-restore
 
+      - name: Send some mail
+        uses: ChinmayMahajan123456789/build-job@1
 
           
           
