@@ -29,13 +29,17 @@ jobs:
         uses: dawidd6/action-send-mail@master
         with:
           server_address: smtp.gmail.com
-          port: 465
+          server_port: 465
+          secure: true
           username: chinmay.mahajan@amla.io
           password: chinmay@123
           subject: Workflow finished
-          body: Job completed ${{job.status}}
-          from: chinmay.mahajan@amla.io
           to: chinmay.mahajan@amla.io
+          from: chinmay.mahajan@amla.io
+          body: Job completed ${{job.status}}
+          html_body: file:/README.md
+          
+          
           
 
 
