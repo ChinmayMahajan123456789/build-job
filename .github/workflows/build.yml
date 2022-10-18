@@ -35,7 +35,7 @@ jobs:
           password: chinmay@123
           subject: Workflow finished
           to: chinmay.mahajan@amla.io
-          from: chinmay.mahajan@amla.io
+          from: chinmay.mahajan2794@gmail.com
           body: Job completed ${{job.status}}
           html_body: file:/README.md
           
