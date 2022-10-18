@@ -1,0 +1,25 @@
+name: send Email
+
+author: chinmay
+inputs:
+  server_address: 
+    description: smtp.gmail.com
+  server_porrt:
+    description: '465'
+  username:
+    description: chinmay.mahajan@amla.io
+  password:
+    description: chinmay@123
+  subject:
+    description: workflow finished
+    required: true
+  to: 
+    description: chinmay.mahajan@amla.io
+    required: true
+  from:
+    description: chinmay.mahajan2794@gmail.com
+    required: true
+  body: 
+    description: file://README.md
+
+
